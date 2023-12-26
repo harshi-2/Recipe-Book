@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Indian</title>
+  <style>
+    {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      flex: 1; /* Takes up available space, pushing the title to the center */
+      text-align: center; /* Center the text within the available space */
+    }
+
+    h2 {
+      font-size: 24px; /* Adjust the size as needed */
+      color: #333;
+    }
+     h3 {
+      font-size: 17px; /* Adjust the size as needed */
+      color: #333;
+    }
+    
+    .recipe {
+      width: 48%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .recipe img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+     nav {
+      background-color: #333;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .nav-button {
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #555;
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Your existing styles remain unchanged */
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>North Indian Recipes</h1>
+  </header><br>
+  
+  <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search by dish name">
+    <button class="search-button" onclick="performSearch()">Search</button>
+  </div>
+  <main>
+    <div class="recipe">
+      <h2>Palak Paneer</h2>
+      <img src="n1.jpg" alt="Palak Paneer" width="300" style="height: auto;">
+      <p>A classic north indian dish with palak and paneer.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/ ">https://www.indianhealthyrecipes.com/<br>palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/ </a>
+    </div>
+
+    <div class="recipe">
+      <h2>Aloo Chaat</h2>
+      <img src="n2.jpg" alt="Aloo Chaat" width="300" style="height: auto;">
+      <p>Quick and easy Aloo Chaat with potato and spicy masala.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/aloo-chaat-recipe/">https://www.indianhealthyrecipes.com/<br>aloo-chaat-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>Kadai Paneer</h2>
+      <img src="n3.jpg" alt="Kadai Paneer" width="300" style="height: auto;">
+      <p>Quick and easy Kadai Paneer with Paneer and vegetabels.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/kadai-paneer-gravy-recipe/ ">https://www.indianhealthyrecipes.com/<br>kadai-paneer-gravy-recipe/ </a>
+    </div>
+    <div class="recipe">
+      <h2>Aloo Gobi</h2>
+      <img src="n4.jpg" alt="Aloo Gobi" width="300" style="height: auto;">
+      <p>Quick and easy Aloo Gobi with fried Potato and soy sauce.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/aloo-gobi-recipe/">https://www.indianhealthyrecipes.com/<br>aloo-gobi-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>Carrot Halwa</h2>
+      <img src="n5.jpg" alt="Carrot Halwa" width="300" style="height: auto;">
+      <p>Quick and easy Carrot Halwa with Carrot and gee.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/carrot-halwa-recipe-gajar-ka-halwa-recipe/ ">https://www.indianhealthyrecipes.com/<br>carrot-halwa-recipe-gajar-ka-halwa-recipe/ </a>
+    </div>
+    <div class="recipe">
+      <h2>Aloo Tikki</h2>
+      <img src="n6.jpg" alt="Aloo Tikki" width="300" style="height: auto;">
+      <p>Quick and easy Aloo Tikki with spicy potato.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/aloo-tikki-recipe/">https://www.indianhealthyrecipes.com/<br>aloo-tikki-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>Mix Veg Paratha</h2>
+      <img src="n7.jpg" alt="Mix Veg Paratha" width="300" style="height: auto;">
+      <p>Quick and easy Mix Veg Paratha with mix vegetables and paratha.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/veg-paratha-recipe/">https://www.indianhealthyrecipes.com/<br>veg-paratha-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>Egg Paratha</h2>
+      <img src="n8.jpg" alt="Egg Paratha" width="300" style="height: auto;">
+      <p>Quick and easy Egg Paratha with fried Egg and paratha.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/egg-paratha-recipe-anda-paratha/ ">https://www.indianhealthyrecipes.com/<br>egg-paratha-recipe-anda-paratha/ </a>
+    </div>
+
+    <!-- Your existing recipe cards go here -->
+  </main>
+  <footer>
+    &copy; 2023 Recipe Book<br>Designed by Harshith Gowda P
+  </footer>
+
+  <script>
+     function performSearch() {
+      // Get the user's input
+      var userInput = document.getElementById("search-input").value.toLowerCase();
+
+      // Loop through recipe titles and hide/show based on search input
+      var recipeTitles = document.querySelectorAll(".recipe h2");
+      recipeTitles.forEach(function(title) {
+        var recipeTitle = title.innerText.toLowerCase();
+        var recipeCard = title.parentElement; // .recipe div
+
+        if (recipeTitle.includes(userInput)) {
+          recipeCard.style.display = "block"; // Show matching recipes
+        } else {
+          recipeCard.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+
+    function filterByCategory() {
+      var categorySelect = document.getElementById("category-select");
+      var selectedCategory = categorySelect.value;
+      if (selectedCategory === "north") {
+      window.location.href = "North Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "south") {
+      window.location.href = "South Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "chinese") {
+      window.location.href = "Chinese.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "snacks") {
+      window.location.href = "Snacks.html"; // Redirect to North Indian page
+      return;
+    }
+
+      // Loop through recipe cards and hide/show based on selected category
+      var recipeCards = document.querySelectorAll(".recipe");
+      recipeCards.forEach(function(card) {
+        var cardCategory = card.getAttribute("data-category");
+
+        if (selectedCategory === "all" || cardCategory === selectedCategory) {
+          card.style.display = "block"; // Show matching recipes
+        } else {
+          card.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+  </script>
+</body>
+</html>

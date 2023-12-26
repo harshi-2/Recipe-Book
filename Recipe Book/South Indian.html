@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Indian</title>
+  <style>
+    {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      flex: 1; /* Takes up available space, pushing the title to the center */
+      text-align: center; /* Center the text within the available space */
+    }
+
+    h2 {
+      font-size: 24px; /* Adjust the size as needed */
+      color: #333;
+    }
+     h3 {
+      font-size: 17px; /* Adjust the size as needed */
+      color: #333;
+    }
+    
+    .recipe {
+      width: 48%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .recipe img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+     nav {
+      background-color: #333;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .nav-button {
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #555;
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Your existing styles remain unchanged */
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>South Indian Recipes</h1>
+  </header><br>
+  
+  <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search by dish name">
+    <button class="search-button" onclick="performSearch()">Search</button>
+  </div>
+  <main>
+    <div class="recipe">
+      <h2>Sambar Recipe</h2>
+      <img src="s1.jpg" alt="Sambar Recipe" width="300" style="height: auto;">
+      <p>A classic south indian dish with spicy and masala sambar.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/andhra-sambar-recipe-how-to-make-south-indian-sambar/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare ">https://www.indianhealthyrecipes.com/andhra-sambar-recipe-how-to-make-south-indian-sambar<br>/?utm_source=whatsapp&utm_medium=social&utm<br>
+      _campaign=SocialWarfare </a>
+    </div>
+
+    <div class="recipe">
+      <h2>Rasam Recipe</h2>
+      <img src="s2.jpg" alt="Rasam Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Rasam with Spicy and Hot.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/tomato-rasam-recipe/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare">https://www.indianhealthyrecipes.com/tomato-rasam-recipe/?<br>
+      utm_source=whatsapp&utm_medium<br>=social&utm_campaign=SocialWarfare</a>
+    </div>
+    <div class="recipe">
+      <h2>Ven Pongal Recipe</h2>
+      <img src="s3.jpg" alt="Ven Pongal Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Ven Pongal which is also called khara pongal.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/pongal-recipe-venn-pongal/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare ">https://www.indianhealthyrecipes.com/pongal-recipe-venn-pongal/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare </a>
+    </div>
+    <div class="recipe">
+      <h2>Medu Vada Recipe</h2>
+      <img src="s4.jpg" alt="Medu Vada Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Medu Vada with masala.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/garelu-medhu-vadai-recipe/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare">https://www.indianhealthyrecipes.com/garelu-medhu-vadai-recipe/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare</a>
+    </div>
+    <div class="recipe">
+      <h2>Idle Recipe</h2>
+      <img src="s5.jpg" alt="Idle Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Idle Recipe.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/idli-podi-recipe-idli-podi/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare ">https://www.indianhealthyrecipes.com/idli-podi-recipe-idli-podi/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare</a>
+    </div>
+    <div class="recipe">
+      <h2>Dosa Recipe</h2>
+      <img src="s6.jpg" alt="Dosa Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Dosa taste at home once.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare">https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare</a>
+    </div>
+    <div class="recipe">
+      <h2>Dal Vada</h2>
+      <img src="s7.jpg" alt="Dal Vada" width="300" style="height: auto;">
+      <p>Quick and easy Dal Vada taste at home.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/mixed-dal-vada-recipe/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare">https://www.indianhealthyrecipes.com/mixed-dal-vada-recipe/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare</a>
+    </div>
+    <div class="recipe">
+      <h2>Puliyogare Recipe</h2>
+      <img src="s8.jpg" alt="Puliyogare Recipe" width="300" style="height: auto;">
+      <p>Quick and easy Puliyogare taste at home.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/puliyogare-recipe/?utm_source=whatsapp&utm_medium=social&utm_campaign=SocialWarfare ">https://www.indianhealthyrecipes.com/puliyogare-recipe/<br>?utm_source=whatsapp&utm_medium=social&utm_<br>campaign=SocialWarfare</a>
+    </div>
+
+    <!-- Your existing recipe cards go here -->
+  </main>
+  <footer>
+    &copy; 2023 Recipe Book<br>Designed by Harshith Gowda P
+  </footer>
+
+  <script>
+     function performSearch() {
+      // Get the user's input
+      var userInput = document.getElementById("search-input").value.toLowerCase();
+
+      // Loop through recipe titles and hide/show based on search input
+      var recipeTitles = document.querySelectorAll(".recipe h2");
+      recipeTitles.forEach(function(title) {
+        var recipeTitle = title.innerText.toLowerCase();
+        var recipeCard = title.parentElement; // .recipe div
+
+        if (recipeTitle.includes(userInput)) {
+          recipeCard.style.display = "block"; // Show matching recipes
+        } else {
+          recipeCard.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+
+    function filterByCategory() {
+      var categorySelect = document.getElementById("category-select");
+      var selectedCategory = categorySelect.value;
+      if (selectedCategory === "north") {
+      window.location.href = "North Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "south") {
+      window.location.href = "South Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "chinese") {
+      window.location.href = "Chinese.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "snacks") {
+      window.location.href = "Snacks.html"; // Redirect to North Indian page
+      return;
+    }
+
+      // Loop through recipe cards and hide/show based on selected category
+      var recipeCards = document.querySelectorAll(".recipe");
+      recipeCards.forEach(function(card) {
+        var cardCategory = card.getAttribute("data-category");
+
+        if (selectedCategory === "all" || cardCategory === selectedCategory) {
+          card.style.display = "block"; // Show matching recipes
+        } else {
+          card.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+  </script>
+</body>
+</html>

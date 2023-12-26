@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <style>
+    {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      flex: 1; /* Takes up available space, pushing the title to the center */
+      text-align: center; /* Center the text within the available space */
+    }
+
+    h2 {
+      font-size: 24px; /* Adjust the size as needed */
+      color: #333;
+    }
+     h3 {
+      font-size: 17px; /* Adjust the size as needed */
+      color: #333;
+    }
+    
+    .recipe {
+      width: 48%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .recipe img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+     nav {
+      background-color: #333;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+
+    .nav-button {
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #555;
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Your existing styles remain unchanged */
+
+    .search-container {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #45a049;
+    }
+    .category-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .category-select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+  </header>
+  <nav>
+   <a href="Main.html">Home</a>
+  <a href="contact us.html">Contact Us</a>
+    <a href="Rate Us.html">Rate Us</a>
+    <a href="About Me.html">About Me</a>
+  </nav><br>
+  <div class="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="Search by dish name">
+    <button class="search-button" onclick="performSearch()">Search</button>
+  </div>
+  <div class="category-container">
+    <label for="category-select">Select Recipe Category:</label>
+    <select id="category-select" class="category-select" onchange="filterByCategory()">
+      <option value="all">All Recipes</option>
+      <option value="north">North Recipe</option>
+      <option value="south">South Recipe</option>
+    </select>
+  </div>
+  <main>
+    <div class="recipe">
+      <h2>Pasta Carbonara</h2>
+      <img src="1.jpg" alt="Pasta Carbonara" width="300" style="height: auto;">
+      <p>A classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.simplyrecipes.com/recipes/spaghetti_alla_carbonara/">https://www.simplyrecipes.com/recipes/<br>spaghetti_alla_carbonara/</a>
+    </div>
+
+    <div class="recipe">
+      <h2>Chicken Stir-Fry</h2>
+      <img src="2.jpg" alt="Chicken Stir-Fry" width="300" style="height: auto;">
+      <p>Quick and easy chicken stir-fry with vegetables and soy sauce.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.allrecipes.com/recipe/223382/chicken-stir-fry">https://www.allrecipes.com/recipe/223382/<br>chicken-stir-fry</a>
+    </div>
+    <div class="recipe">
+      <h2>Chicken Maggi</h2>
+      <img src="3.jpg" alt="Chicken Maggi" width="300" style="height: auto;">
+      <p>Quick and easy chicken Maggi with vegetables and soy sauce.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.whiskaffair.com/chicken-maggi-recipe/">https://www.whiskaffair.com/<br>chicken-maggi-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>chicken crunchy</h2>
+      <img src="4.jpg" alt="Chicken crunchy" width="300" style="height: auto;">
+      <p>Quick and easy chicken crunchy with fried Chicken and Tomato ketchup.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.youtube.com/watch?v=KZPYqu2qfT8">https://www.youtube.com/watch?v=KZPYqu2qfT8/</a>
+    </div>
+    <div class="recipe">
+      <h2>Chicken Peper Dry</h2>
+      <img src="5.jpg" alt="Chicken Peper Dry" width="300" style="height: auto;">
+      <p>Quick and easy chicken Peper Dry with Chicken and Peper.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.yummytummyaarthi.com/dry-pepper-chicken-indian-style/">https://www.yummytummyaarthi.com/<br>dry-pepper-chicken-indian-style/</a>
+    </div>
+    <div class="recipe">
+      <h2>Chicken Biryani</h2>
+      <img src="6.jpg" alt="Chicken Biryani" width="300" style="height: auto;">
+      <p>Quick and easy chicken Biryani with spicy and Hot witn curd.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">https://www.indianhealthyrecipes.com/<br>chicken-biryani-recipe/</a>
+    </div>
+    <div class="recipe">
+      <h2>Nati Koli Saaru</h2>
+      <img src="7.jpg" alt="Nati Koli Saaru" width="300" style="height: auto;">
+      <p>Quick and easy Nati Koli Saaru with Chicken and Spicy Masala.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.youtube.com/watch?v=xMhcvq29_CI">https://www.youtube.com/<br>watch?v=xMhcvq29_CI</a>
+    </div>
+    <div class="recipe">
+      <h2>Chicken Kabab</h2>
+      <img src="8.jpg" alt="Chicken Kabab" width="300" style="height: auto;">
+      <p>Quick and easy chicken Kabab with fried Chicken and masala with hot and spicy.</p>
+      <h3>How to Prepare Click Below</h3>
+      <a href="https://www.indianhealthyrecipes.com/chicken-kebab-recipe-chicken-kabab/">https://www.indianhealthyrecipes.com/chicken-kebab-recipe-chicken-kabab/</a>
+    </div>
+
+    <!-- Your existing recipe cards go here -->
+  </main>
+  <footer>
+    &copy; 2023 Recipe Book<br>Designed by Harshith Gowda P
+  </footer>
+
+  <script>
+     function performSearch() {
+      // Get the user's input
+      var userInput = document.getElementById("search-input").value.toLowerCase();
+
+      // Loop through recipe titles and hide/show based on search input
+      var recipeTitles = document.querySelectorAll(".recipe h2");
+      recipeTitles.forEach(function(title) {
+        var recipeTitle = title.innerText.toLowerCase();
+        var recipeCard = title.parentElement; // .recipe div
+
+        if (recipeTitle.includes(userInput)) {
+          recipeCard.style.display = "block"; // Show matching recipes
+        } else {
+          recipeCard.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+
+    function filterByCategory() {
+      var categorySelect = document.getElementById("category-select");
+      var selectedCategory = categorySelect.value;
+      if (selectedCategory === "north") {
+      window.location.href = "North Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "south") {
+      window.location.href = "South Indian.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "chinese") {
+      window.location.href = "Chinese.html"; // Redirect to North Indian page
+      return;
+    }
+    if (selectedCategory === "snacks") {
+      window.location.href = "Snacks.html"; // Redirect to North Indian page
+      return;
+    }
+
+      // Loop through recipe cards and hide/show based on selected category
+      var recipeCards = document.querySelectorAll(".recipe");
+      recipeCards.forEach(function(card) {
+        var cardCategory = card.getAttribute("data-category");
+
+        if (selectedCategory === "all" || cardCategory === selectedCategory) {
+          card.style.display = "block"; // Show matching recipes
+        } else {
+          card.style.display = "none"; // Hide non-matching recipes
+        }
+      });
+    }
+  </script>
+</body>
+</html>
